@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=620">
+<body>
+<script>
+
+online();	
+
+function online() {
+	
+	var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+	var Android = (navigator.userAgent.match(/Android/i) ? true : false);
+  
+	if(iOS || Android)
+		window.location = "http://localhost:8080/VentasUnimarKickStart2/VentasUnimarKickStart";		
+	else
+		window.location = "http://localhost:78/VentasUnimarKickStart2/VentasUnimarKickStart";
+		
+  
+}
+</script>
+</body>
+</html>
